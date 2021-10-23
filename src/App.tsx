@@ -10,14 +10,16 @@ function App() {
     <Router>
       <div className="App">
         <Navbar></Navbar>
-        <Switch>
-          <Route path="/boids">
-            <Boids />
-          </Route>
-          <Route path="/">
-            <Assignments />
-          </Route>
-        </Switch>
+        <main className="mt-4">
+          <Switch>
+            <Route path="/boids">
+              <Boids />
+            </Route>
+            <Route path="/">
+              <Assignments />
+            </Route>
+          </Switch>
+        </main>
       </div>
     </Router>
   );
