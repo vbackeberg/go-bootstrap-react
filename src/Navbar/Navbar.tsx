@@ -1,37 +1,36 @@
 import { ReactElement } from "react";
+import { Link } from "react-router-dom";
+import brand from "../assets/brand.svg";
 
 export default function Navbar(): ReactElement {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Navbar
-        </a>
+        <Link className="navbar-brand" to="/">
+          <img src={brand} height="38" width="38" alt="" />
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-target="#navbarTop"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" id="navbarTop">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              <Link className="nav-link" to="/">
                 Assignments
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              <Link className="nav-link" to="/boids">
                 Boids
-              </a>
+              </Link>
             </li>
           </ul>
-          <button className="btn btn-secondary">
+          <button className="btn btn-primary">
             <i className="bi bi-person-fill"></i>
           </button>
         </div>
