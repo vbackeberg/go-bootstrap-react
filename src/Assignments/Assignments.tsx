@@ -1,17 +1,17 @@
 import { ReactElement, useEffect, useState } from "react";
 import { Assignment } from "../Services/Data/assignments";
 import { HttpService } from "../Services/Http.service";
-import exampleLogo from "../assets/example-logo.png"
+import exampleLogo from "../assets/example-logo.png";
 export default function Assignments(): ReactElement {
   const [assignments, setAssignments] = useState<Assignment[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     HttpService.getAssignments().then((data) => {
       setAssignments(data);
+      setLoading(false);
     });
   }, []);
-
-  let loading = true;
 
   return (
     <div className="container">
@@ -20,11 +20,7 @@ export default function Assignments(): ReactElement {
         {assignments.map((assignment) => (
           <div>
             <div className="card">
-              <img
-                src={exampleLogo}
-                className="img-fluid"
-                alt=""
-              />
+              <img src={exampleLogo} className="img-fluid" alt="" />
               <div className="card-body">
                 <h5 className="card-title">{assignment.name}</h5>
                 <p className="card-text">{assignment.description}</p>
