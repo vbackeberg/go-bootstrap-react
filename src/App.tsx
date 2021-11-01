@@ -19,7 +19,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar></Navbar>
-        <main className="mt-4">
+        <main>
           <Switch>
             <Route path="/boids">
               <Boids />
