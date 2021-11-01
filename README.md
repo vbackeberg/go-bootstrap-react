@@ -1,5 +1,9 @@
 # Go Bootstrap React
 
+➡️ [Click here to reach the step by step guide](https://github.com/vbackeberg/go-bootstrap-react/blob/master/Guide.md)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
