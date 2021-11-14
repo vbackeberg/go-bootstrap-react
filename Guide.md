@@ -362,38 +362,40 @@
     #### **`Boids.tsx`**
 
     ```tsx
-    <form>
-      <div className="container-fluid">
-        <div className="row row-cols-2">
-          <div className="col">
-            <label htmlFor="first-name" className="col-form-label">
-              First name
-            </label>
-            <input type="text" className="form-control" id="first-name" />
+    <div className="modal-body">
+      <form>
+        <div className="container-fluid">
+          <div className="row row-cols-2">
+            <div className="col">
+              <label htmlFor="first-name" className="col-form-label">
+                First name
+              </label>
+              <input type="text" className="form-control" id="first-name" />
+            </div>
+            <div className="col">
+              <label htmlFor="last-name" className="col-form-label">
+                Last name
+              </label>
+              <input type="text" className="form-control" id="last-name" />
+            </div>
           </div>
-          <div className="col">
-            <label htmlFor="last-name" className="col-form-label">
-              Last name
-            </label>
-            <input type="text" className="form-control" id="last-name" />
+          <div className="row row-cols-2">
+            <div className="col">
+              <label htmlFor="available-from" className="col-form-label">
+                Available from
+              </label>
+              <input className="form-control" id="available-from" />
+            </div>
+            <div className="col">
+              <label htmlFor="skillset" className="col-form-label">
+                Skillset
+              </label>
+              <textarea className="form-control" id="skillset"></textarea>
+            </div>
           </div>
         </div>
-        <div className="row row-cols-2">
-          <div className="col">
-            <label htmlFor="available-from" className="col-form-label">
-              Available from
-            </label>
-            <input className="form-control" id="available-from" />
-          </div>
-          <div className="col">
-            <label htmlFor="skillset" className="col-form-label">
-              Skillset
-            </label>
-            <textarea className="form-control" id="skillset"></textarea>
-          </div>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
     ```
 
     </details>
