@@ -318,7 +318,7 @@
         </button>
     </div>
 
-    ...
+    ...[below table]
 
     <div className="modal fade" id="addBoidModal" tabIndex={-1}>
         <div className="modal-dialog modal-lg modal-fullscreen-md-down modal-dialog-centered">
